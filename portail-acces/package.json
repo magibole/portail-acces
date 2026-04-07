@@ -1,0 +1,12 @@
+{
+  "name": "portail-acces",
+  "version": "1.0.0",
+  "description": "Serveur web pour le portail d'accès Home Assistant",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
