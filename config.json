@@ -1,20 +1,13 @@
 {
-  "name": "Portail Accès",
+  "name": "Portail Acces",
   "version": "1.0.0",
-  "slug": "portail-acces",
-  "description": "Serveur web Node.js pour le portail d'accès (port 8099)",
-  "url": "https://github.com/magibole/site-portialle-",
-  "arch": ["aarch64", "amd64", "armhf", "armv7", "i386"],
+  "slug": "portail_acces",
+  "description": "Gestion des accès portails",
+  "arch": ["aarch64", "armv7", "amd64"],
   "startup": "application",
   "boot": "auto",
-  "ports": {
-    "8099/tcp": 8099
-  },
-  "ports_description": {
-    "8099/tcp": "Interface web du portail d'accès"
-  },
-  "map": [],
-  "options": {},
-  "schema": {},
-  "image": "ghcr.io/magibole/site-portialle-/portail-acces"
+  "ports": {"8099/tcp": 8099},
+  "map": ["config:rw"],
+  "homeassistant_api": false,
+  "hassio_api": false
 }
